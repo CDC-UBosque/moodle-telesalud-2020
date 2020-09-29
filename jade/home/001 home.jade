@@ -1,0 +1,74 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				//- banner modulos
+				div
+					img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/telemedicina-2020/images/jpgs/banner-principal.jpg' alt='curso virtual en telemedicina')
+			
+				//- menu
+				//-+menu
+				
+				//- lineamientos
+				div.lineamientos
+					div.title 
+						h1 Módulo 0
+					div.contents
+						div
+							a.white-btn(href="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/telemedicina-2020/PDFs/Carta-de-Bievenida-curso-Telesalud-AZ.pdf" target='_blank') Carta de bienvenida
+							a.white-btn(href="#") Reglas de juego
+						
+				//- grid modulos
+				div.grid-modulos.timeit(data-start="2020-09-01 00:00")
+				
+					div.modulos.timeit(data-start="2020-09-01 00:00")
+						h3 Módulo 1
+						p Introducción a la telesalud
+						a.pink-btn(href="#") Iniciar sesión Zoom
+						a.pink-line-btn(href="#") Archivo PDF
+						
+					div.modulos.timeit(data-start="2020-09-01 00:00")
+						h3 Módulo 2
+						p Normatividad en telesalud
+						a.pink-btn(href="#") Iniciar sesión Zoom
+						a.pink-line-btn(href="#") Archivo PDF
+						
+					div.modulos.timeit(data-start="2020-09-01 00:00")
+						h3 Módulo 3
+						p Modelo de atención en telesalud
+						a.pink-btn(href="#") Iniciar sesión Zoom
+						a.pink-line-btn(href="#") Archivo PDF
+						
+					div.modulos.timeit(data-start="2020-09-01 00:00")
+						h3 Módulo 4
+						p Tecnología de la telesalud
+						a.pink-btn(href="#") Iniciar sesión Zoom
+						a.pink-line-btn(href="https://www.himss.org/resources/interoperability-healthcare" target='_blank') Interoperability in HealthCare
+						a.pink-line-btn(href="https://seis.es/informe-5/" target='_blank') Informe SEIS, Sociedad Española de Informatica en Salud
+						a.pink-line-btn(href="https://socialdigital.iadb.org/es/resources/health/kits-de-herramientas/271/274" target='_blank') Estandares de interoperabilidad en Salud, RACSEL
+						a.pink-line-btn(href="https://publications.iadb.org/es/interoperabilidad-para-principiantes-la-base-de-la-salud-digital" target='_blank') Interoperabilidad para principiantes: La base de la salud digital
+						a.pink-line-btn(href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=269" target='_blank') HL7 Functional Model
+					
+					
+					
+				
+							
+	//- footer section			
+	+footer
+		
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

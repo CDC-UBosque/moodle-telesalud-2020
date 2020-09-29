@@ -1,0 +1,166 @@
+// -----------------------
+// typography
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc,
+#page-mod-book-view #region-main .curso-cc{
+	
+	@include font_universal (
+		$font_family_line_height: 22px,
+		$font_family_weight: 300,
+		$font_family_size: 17px,
+		$font_family_color: $color_text,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_regular
+	);
+	
+	p{
+		@include max-width;
+		margin: 1rem 0;
+		@include font_universal (
+			$font_family_line_height: 22px,
+			$font_family_weight: 300,
+			$font_family_size: 16px,
+			$font_family_color: $color_text,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_regular
+		);
+	}
+	
+	p.italic{
+		@include font_universal (
+			$font_family_line_height: 22px,
+			$font_family_weight: 300,
+			$font_family_size: 16px,
+			$font_family_color: $color_text,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_regular
+		);
+	}
+	
+	h1{
+		word-break: break-word;
+		display: inline-block;
+		@include font_universal (
+			$font_family_line_height: 32px,
+			$font_family_weight: 300,
+			$font_family_size: 25px,
+			$font_family_color: $color_white,
+			$font_family_letter_spacing: 1,
+			$font_family_group: $font_acherus_black
+		);
+		//@media (max-width: $breakpoint_2){
+		//	font-size: 33px;
+		//	line-height: 33px;
+		//}
+	}
+	
+	h2{
+		word-break: break-word;
+		display: block;
+		margin-left: 0 !important;
+		@include font_universal (
+			$font_family_line_height: 51px !important,
+			$font_family_weight: 300 !important,
+			$font_family_size: 41px !important,
+			$font_family_color: $color_brand_blue !important,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_bold
+		);
+		
+		@media (max-width: $breakpoint_2){
+			font-size: 34px !important;
+			line-height: 35px !important;
+		}
+		
+	}
+	
+	h3{
+		word-break: break-word;
+		display: block;
+		@include font_universal (
+			$font_family_line_height: 32px,
+			$font_family_weight: 300,
+			$font_family_size: 25px,
+			$font_family_color: $color_text,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_regular
+		);
+	}
+	
+	h4{
+		word-break: break-word;
+		display: block;
+		@include font_universal (
+			$font_family_line_height: 31px,
+			$font_family_weight: 300,
+			$font_family_size: 24px,
+			$font_family_color: $color_brand_blue,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_ultralight
+		);
+	}
+	
+	h5{
+		word-break: break-word;
+		display: block;
+		@include font_universal (
+			$font_family_line_height: 28px,
+			$font_family_weight: 300,
+			$font_family_size: 20px,
+			$font_family_color: $color_brand_blue,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_ultralight
+		);
+	}
+	
+	h6{
+		word-break: break-word;
+		display: block;
+		@include font_universal (
+			$font_family_line_height: 20px,
+			$font_family_weight: 300,
+			$font_family_size: 14px,
+			$font_family_color: $color_brand_blue,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_ultralight
+		);
+	}
+	
+	ol,
+	ul{
+		word-break: break-word;
+		margin: 0 0 0 3rem !important;
+		
+		li{
+			margin-bottom: 1rem;
+			@include font_universal (
+				$font_family_line_height: 28px,
+				$font_family_weight: 300,
+				$font_family_size: 17px,
+				$font_family_color: $color_brand_blue,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font_lato_regular
+			);
+		}
+		
+	}
+	
+	sup{
+		color: $color_brand_green;
+	}
+	
+	a{
+		word-break: break-all;
+		display: inline-block;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		word-break: break-all;
+		line-break: strict;
+		hyphens: none;
+		-webkit-hyphens: none;
+		-moz-hyphens: none;
+	}
+	
+}

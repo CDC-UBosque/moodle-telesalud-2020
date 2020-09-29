@@ -1,0 +1,148 @@
+// -----------------------
+// accordion
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.content-cc{
+		
+		.accordion{
+			margin: 2rem auto 4rem;
+			
+			.accordion-group{
+				border: 0px;
+				border-radius: 0px;
+				margin-bottom: 0;
+				margin-top: -1px;
+				
+				.accordion-heading{
+					
+					.accordion-toggle,
+					.accordion-toggle[aria-expanded="true"],
+					.accordion-toggle.collapsed[aria-expanded="true"]{
+						padding-right: 7rem;
+						background: $color_brand_green;
+						border: 1px solid $color_white;
+						@include font_universal (
+							$font_family_line_height: 24px,
+							$font_family_weight: 300,
+							$font_family_size: 18px,
+							$font_family_color: $color_white,
+							$font_family_letter_spacing: 0,
+							$font_family_group: $font_acherus_extrabold
+						);
+						
+						&:before{
+							display: none;
+						}
+						
+						&:after{
+							content: "";
+							background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/svg/up.svg');
+							background-repeat: no-repeat;
+							background-position: center;
+							background-size: 11px;
+							position: absolute;
+							width: 6rem;
+							height: 1.8rem;
+						    top: 0.6rem;
+						    right: 0.5rem;
+						    transition: all .1s ease-in-out;
+						}
+						
+						&:hover{
+							
+							&:after{
+								top: 0.2rem;
+							}
+							
+						}
+						
+						
+						
+					}
+					
+					.accordion-toggle.collapsed,
+					.accordion-toggle[aria-expanded="false"],
+					.accordion-toggle.collapsed[aria-expanded="false"]{
+						padding-right: 7rem;
+						background: $color_brand_green;
+						border: 1px solid $color_white;
+						@include font_universal (
+							$font_family_line_height: 24px,
+							$font_family_weight: 300,
+							$font_family_size: 18px,
+							$font_family_color: $color_white,
+							$font_family_letter_spacing: 0,
+							$font_family_group: $font_acherus_extrabold
+						);
+						
+						&:before{
+							display: none;
+						}
+						
+						&:after{
+							content: "";
+							background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/svg/down.svg');
+							background-repeat: no-repeat;
+							background-position: center;
+							background-size: 11px;
+							position: absolute;
+							width: 6rem;
+							height: 1.8rem;
+						    top: 0.6rem;
+						    right: 0.5rem;
+						    transition: all .1s ease-in-out;
+						}
+						
+						&:hover{
+							
+							&:after{
+								top: 1rem;
+							}
+							
+						}
+						
+					}
+					
+				}
+				
+				.accordion-body{
+					width: 95%;
+					background: $color_light_green;
+					
+					.accordion-inner{
+						display: inline-block;
+						padding: 0.5rem 2rem 0rem;
+					}
+					
+				}
+				
+				.accordion-body.show{
+					height: auto !important;
+					@include prefix(transition, height 0.35s ease, webkit moz o);
+				}
+				
+				.accordion-body.in.collapse{
+					height: auto !important;
+					@include prefix(transition, height 0.35s ease, webkit moz o);
+				}
+				
+				.accordion-body.collapse{
+					height: 0 !important;
+					@include prefix(transition, height 0.35s ease, webkit moz o);
+				}
+				
+				.accordion-body.in.collapse.show{
+					height: auto !important;
+					@include prefix(transition, height 0.35s ease, webkit moz o);
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

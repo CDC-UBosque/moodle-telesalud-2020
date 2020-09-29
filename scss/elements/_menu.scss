@@ -1,0 +1,377 @@
+// -----------------------
+// menu
+// -----------------------
+
+
+.curso-cc .content-cc,
+#region-main .curso-cc .content-cc{
+	
+	#menu_curso{
+		margin-bottom: 2rem;
+	}
+	
+	nav {
+    
+		.menu-toggle{
+			display: none;
+			background: $color_light_green;
+			margin: auto;
+			box-sizing: border-box;
+			padding: 1rem;
+			text-align: left;
+			@include font_universal (
+				$font_family_line_height: 19px,
+				$font_family_weight: 300,
+				$font_family_size: 17px,
+				$font_family_color: $color_text,
+				$font_family_letter_spacing: 1,
+				$font_family_group: $font_acherus_bold
+			);
+			
+			@media (max-width: 779px){
+				display: block;
+			}
+			
+			&:hover{
+			  color: initial;
+			  background-color: $color_brand_green;
+			  cursor: pointer;
+			}
+			
+		}
+		
+		ul{
+			
+			margin: 0 !important;
+			padding: 0;
+			list-style: none;
+			width: 100%;
+			max-width: initial;
+			
+			/*@media screen and (max-width: 1100px) and (min-width: 767px){
+				flex-wrap: wrap;
+				    
+			}*/
+		    
+		    @media (min-width: $breakpoint_2){
+			    display: block !important;
+		    }
+		    
+		    @media (max-width: 779px){
+			    display: none;
+		    }
+			
+			&:before,
+			&:after{
+				content: "";
+				display: table;
+			}
+			
+			&:after{
+				clear:both;
+			}
+			
+			.home{
+				background: $color_white;
+				position: relative;
+				border: 2px solid initial;
+				box-sizing: border-box;
+				text-align: center;
+				list-style-type: none;
+				margin: 0;
+				
+				a{
+					
+					display: block;
+					top: 23%;
+					padding: 0 0.3rem;
+					
+					.fa{
+						color: initial;
+						font-size: xx-large;
+					}
+					
+				}
+				
+			}
+			
+			.dropdown{
+				position: relative;
+				box-sizing: border-box;
+				float: left;
+				list-style-type: none;
+				margin: 0 .2rem 0 0;
+				background: initial;
+				
+				a{
+					position: relative;
+					display: block;
+					padding: 1rem 1.6rem 1rem 0.6rem;
+					text-decoration: none;
+					border: 0;
+					border-radius: 0;
+					word-break: break-word;
+					text-transform: uppercase;
+					@include font_universal (
+						$font_family_line_height: 18px,
+						$font_family_weight: 300,
+						$font_family_size: 15px,
+						$font_family_color: $color_text,
+						$font_family_letter_spacing: 2,
+						$font_family_group: $font_acherus_light
+					);
+					
+					&:before{
+						//content: "\f107";
+						//font-family: 'FontAWesome';
+						background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/svg/arrow-down.svg');
+						content: "";
+					    //background: url('../images/svg/arrow-down.svg');
+					    background-repeat: no-repeat;
+					    width: 10px;
+					    height: 8px;
+					    position: absolute;
+					    right: 11px;
+					    top: 23px;
+					}
+					
+					&:after{
+						content: "";
+					    background: $color_brand_green;
+					    width: 2px;
+					    height: 26px;
+					    position: absolute;
+					    right: 0px;
+					    top: 13px;
+					    
+					    @media (max-width: $breakpoint_2){
+						    display: none;
+					    }
+					    
+					}
+					
+					&:focus{
+						background: $color_light_green;
+					}
+					
+					&:hover{
+						background: initial;
+						color: initial;
+						
+						&:before{
+							//content: "\f107";
+							//font-family: 'FontAWesome';
+							background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/svg/arrow-up.svg');
+							content: "";
+						    //background: url('../images/svg/arrow-up.svg');
+						    background-repeat: no-repeat;
+						    width: 10px;
+						    height: 8px;
+						    position: absolute;
+						    right: 11px;
+						    top: 23px;
+						}
+						
+					}
+					
+				}
+				
+				a.no-arrows{
+					
+					padding: 1rem;
+					
+					&:before{
+						display: none;
+					}
+					
+					&:after{
+						content: "";
+					    background: $color_brand_green;
+					    width: 2px;
+					    height: 26px;
+					    position: absolute;
+					    right: 0px;
+					    top: 13px;
+					}
+					
+				}
+				
+				&:hover{
+					
+					.dropdown-menu{
+					    top: 100%;
+					    opacity: 1;
+					    width: auto;
+					    visibility: visible;
+					    margin-top: 0;
+					    box-shadow: none;
+					    border: 0;
+					    border-radius: 0;
+					    display: block !important;
+					    width: 100%;
+						border: 2px solid initial;
+						border-top: 0;
+					}
+					
+				}
+				
+				.dropdown-menu{
+					opacity: 1;
+					visibility: visible;
+					width: initial;
+					position: absolute;
+					top: 200%;
+					opacity: 0;
+					visibility: hidden;
+					background-color: $color_light_green;
+					transition: all 250ms;
+					border: 0;
+					border-radius: 0;
+					box-sizing: border-box;
+					padding: 0 1rem;
+					
+					&:before{
+						content: "";
+						width: 0;
+						height: 0;
+						border-left: 8px solid transparent;
+						border-right: 8px solid transparent;
+						border-bottom: 8px solid $color_light_green;
+						margin-top: -8px;
+						margin-left: 1rem;
+					}
+					
+					.divider{
+						height: 2px;
+						display: block !important;
+						background: $color_brand_green;
+						
+						&:nth-last-child(-1n+2){
+							background: $color_brand_green;
+						}
+						
+					}
+					
+					li{
+						//width: 100%;
+						border: 0;
+						margin: 0;
+						list-style-type: none;
+						
+						a{
+							width: auto;
+							display: block;
+							padding: 1rem 0.5rem;
+							box-sizing: border-box;
+							position: relative;
+							transition: all ease-in-out .2s;
+							white-space: pre-wrap; /* css-3 */    
+						    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+						    white-space: -pre-wrap; /* Opera 4-6 */    
+						    white-space: -o-pre-wrap; /* Opera 7 */    
+						    word-wrap: break-word; /* Internet Explorer 5.5+ */
+						    text-transform: lowercase;
+						    
+							
+							&:after{
+								display: none;
+							}
+							
+							&:before{
+								display: none;
+							}
+							
+							&:hover{
+								background: $color_brand_green;
+								
+								&:before{
+									height: 0;
+								}
+								
+							}
+							
+						}
+						
+						&:nth-last-child(-1n+2){
+							background: $color_brand_blue;
+							padding: 0 1rem;
+							margin: -0.2rem -1rem -0.4rem;
+							
+							a{
+								color: $color_white;
+								&:hover{
+									&:before{
+										background: $color_white;
+									}
+								}
+							}
+							
+							&:last-child{
+								margin-bottom: 0.3rem;
+							}
+							
+						}
+						
+					}
+					
+				}
+				
+				&:last-child{
+					margin-right: 0;
+				}
+				
+				&:nth-child(-n+2),
+				.no-activities{
+					
+					.dropdown-menu{
+						
+						.divider{
+							
+							&:nth-last-child(-1n+2){
+								background: initial;
+							}
+							
+						}
+						
+						li{
+							
+							&:nth-last-child(-1n+2){
+								background: initial;
+								
+								a{
+									color: initial;
+									&:hover{
+										&:before{
+											background: initial;
+										}
+									}
+								}
+								
+							}
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+	
+	}
+	
+}
+
+/* responsive */
+@media (max-width: 766px) {
+  nav > ul > li.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  nav > ul > li.dropdown .dropdown-menu {
+    display: none;
+    position: relative;
+    margin: auto;
+    background-color: #F22613;
+  }
+}

@@ -1,0 +1,146 @@
+// -----------------------
+// banner home
+// -----------------------
+.curso-cc,
+#page-mod-book-view #region-main .curso-cc,
+#region-main .curso-cc{
+	
+	.content-cc.article{
+		
+		.content-left{
+			position: relative;
+			z-index: 20;
+			
+			.blocks{
+				position: -webkit-sticky;
+				position: sticky;
+				top: 0;
+				
+				>div{
+					
+					margin-bottom: 2rem;
+					@include display-grid;
+					//@include grid-parent-2-columns (1fr, 3fr);
+					//@include grid-parent-2-rows (auto, 1fr);
+					
+					&:last-child{
+						margin-bottom: 0;
+					}
+					
+					.title{
+						z-index: 10;
+						@include grid-child-column (1, 2);
+						@include grid-child-row (1, 3);
+						
+						h1{
+							@media (max-width: $breakpoint_2){
+								font-size: 1em;
+								line-height: 1em;
+								font-family: $font_acherus_light;
+								letter-spacing: 1px;
+							}
+						}
+						
+					}
+					
+					.content{
+						background: $color_light_green;
+						padding: 2rem 1rem 1rem;
+						@include grid-child-column (1, 2);
+						@include grid-child-row (2, 5);
+						
+						@media (max-width: $breakpoint_2){
+							margin-top: -2px;
+						}
+						
+						a{
+							@media (max-width: $breakpoint_2){
+								font-size: .8em;
+								line-height: .8em;
+							}
+						}
+						
+					}
+					
+					.progressContainer{
+						width: 80%;
+						margin: auto;
+						background: transparentize( $color_brand_blue, 0.8);
+						
+						.progress{
+							background: $color_brand_blue;
+							height: 10px;
+						    border-radius: 0;
+						    width: 80%;
+						    box-shadow: none;
+						    margin-bottom: 0;
+						    @include grid-child-column (1, 2);
+							@include grid-child-row (5, 6);
+						}
+						
+					}
+					
+				}
+				
+				h1{
+					font-size: 26px;
+					line-height: 33px;
+					letter-spacing: 2px;
+					margin-left: 1rem;
+				}
+				
+				h2{
+					font-size: 18px !important;
+					line-height: 25px !important;
+					padding: 0;
+				}
+				
+				hr{
+					border-top: 1px solid $color_brand_green;
+					border-bottom: 1px solid $color_brand_green;
+				}
+				
+				a{
+					display: table;
+				}
+				
+				.top-block{
+					position: relative;
+					z-index: 100;
+					
+					.counter{
+						
+						p{
+							font-size: 16px;
+							line-height: 20px;
+							margin: 0;
+							padding: 0;
+						}
+						
+					}
+					
+				}
+				
+				.bottom-block{
+					position: relative;
+					z-index: 100;
+					
+					@media (max-width: $breakpoint_2){
+						position: fixed;
+						bottom: 0;
+						z-index: 1000000000;
+					}
+					
+					.content{
+						place-items: center;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

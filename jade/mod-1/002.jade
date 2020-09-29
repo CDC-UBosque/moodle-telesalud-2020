@@ -1,0 +1,89 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 1', 'Ámbito jurídico: regulación para el sector, estrategias de licenciamiento ambiental', 'test-mod-1')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323678&chapterid=9352', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323678&chapterid=9354', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					
+					+modulo-video('video-mod-1')
+					
+					h1 Exigibilidad de la Licencia Ambiental
+									
+					p La licencia ambiental es un prerequisito para la iniciación de los diferentes proyectos, obras o actividades, que de acuerdo con sus características y magnitud (revisar Decreto 1076/2015), es otorgada o negada por la Autoridad Nacional de Licencias Ambientales (ANLA) o por las Corporaciones Autónomas Regionales y las de Desarrollo Sostenible. La jurisprudencia de la Corte Constitucional ha reconocido que la competencia para la expedición de licencias ambientales es concurrente con las facultades que tienen las entidades del sector central y las Corporaciones Autónomas Regionales. Así mismo, ha reconocido que el Gobierno Nacional, en principio, tiene la competencia de limitar válidamente la facultad de expedición de licencias ambientales que corresponde a las CAR, siempre y cuando se trate de un proyecto de incidencia nacional y no puramente local o regional, y no se vulnere el núcleo de la autonomía de las CAR.<sup>9</sup>
+					
+					p Para el caso en particular el ANLA es la entidad competente para el licenciamiento en el sector de hidrocarburos de las siguientes, de acuerdo con el artículo 2.2.2.3.2.2.:
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') a
+							li: a(href='#2' data-toggle='tab') b
+							li: a(href='#3' data-toggle='tab') c
+							li: a(href='#4' data-toggle='tab') d
+							li: a(href='#5' data-toggle='tab') e
+							li: a(href='#6' data-toggle='tab') f
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Las actividades de exploración sísmica que requieran la construcción de vías para el tránsito vehicular y las actividades de exploración sísmica en las áreas marinas del territorio nacional cuando se realicen en profundidades inferiores a 200 metros.
+							div.tab-pane.fade#2
+								p Los proyectos de perforación exploratoria por fuera de campos de producción de hidrocarburos existentes, de acuerdo con el área de interés que declare el peticionario. 
+							div.tab-pane.fade#3
+								p La explotación de hidrocarburos que incluye, la perforación de los pozos de cualquier tipo, la construcción de instalaciones propias de la actividad, las obras complementarias incluidas el transporte interno de fluidos del campo por ductos, el almacenamiento interno, vías internas y demás infraestructuras asociada y conexa.
+							div.tab-pane.fade#4
+								p El transporte y conducción de hidrocarburos líquidos y gaseosos que se desarrollen por fuera de los campos de explotación que impliquen la construcción y montaje de infraestructura de líneas de conducción con diámetros iguales o superiores a seis (6) pulgadas (15.24 centímetros). incluyendo estaciones de bombeo y/o reducción de presión y la correspondiente infraestructura de almacenamiento y control de flujo; salvo aquellas actividades relacionadas con la distribución de gas natural de uso domiciliario, comercial o industrial.
+							div.tab-pane.fade#5
+								p Los terminales de entrega y estaciones de transferencia de hidrocarburos, entendidos como la infraestructura de almacenamiento asociada al transporte de hidrocarburos y sus productos y derivados por ductos. 
+							div.tab-pane.fade#6
+								p La construcción y operación de refinerías y los desarrollos petroquímicos que formen parte de un complejo de refinación.
+					
+					p La obtención de la licencia ambiental, es condición previa para el ejercicio de los derechos que surjan de los permisos, autorizaciones, concesiones, contratos y licencias que expidan otras autoridades diferentes a las ambientales. 
+					p Licencia ambiental Global: Para el desarrollo de obras y actividades relacionadas con los proyectos de explotación de hidrocarburos, la autoridad ambiental competente otorgará una Licencia Ambiental Global, que abarcará toda el área de explotación que se solicite. De igual forma, los proyectos de hidrocarburos en donde el área de interés de explotación corresponda al área de interés de exploración previamente licenciada, el interesado podrá solicitar la modificación de la licencia de exploración para realizar las actividades de explotación. En estos casos, para el desarrollo de cada una de las actividades y obras definidas será necesario presentar un Plan de Manejo Ambiental, conforme a los términos, condiciones y obligaciones establecidas para esta condición. 
+
+					//- Foot notes
+					+footnotes('footnotes-mod-1')
+
+					//- Material modulo
+					+material-modulo('material-mod-1')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

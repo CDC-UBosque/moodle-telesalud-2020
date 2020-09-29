@@ -1,0 +1,97 @@
+// -----------------------
+// lightbox
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.banner-video{	
+		margin: 2rem auto 4rem;
+		@include display-grid;
+		@include grid-parent-2-columns (3fr, 1fr);
+		
+		@media (max-width: $tablet){
+			@include grid-parent-1-columns (1fr);
+		}
+		
+		.imagen{
+			@include grid-child-column (1, 2);
+			@include grid-child-row (1, 2);
+		}
+		
+		.texto_imagen{
+			place-self: end;
+			@include grid-child-column (2, 3);
+			@include grid-child-row (1, 2);
+			
+			@media (max-width: $tablet){
+				@include grid-child-column (1, 2);
+				@include grid-child-row (2, 3);
+			}
+			
+			.img-footer{
+				padding: 1rem;
+				border: 2px solid $color_brand_green;
+				@include font_universal (
+					$font_family_line_height: 20px,
+					$font_family_weight: 300,
+					$font_family_size: 15px,
+					$font_family_color: $color_brand_blue,
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font_lato_italic
+				);
+				
+				span{
+			
+					&:last-child{
+						min-height: 0px;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		#video{
+			//border: 1px solid;
+			
+			img{
+				width: 100%;
+				height: auto;
+			}
+			
+			a{
+				display: inline-block;
+				position: relative;
+				transition: all .2s ease-in-out;
+				
+				&:hover{
+					opacity: .5
+				}
+				
+				&:before{
+					font-family: FontAwesome;
+					font-weight: normal;
+					font-style: normal;
+					display: inline-block;
+					content: "\f00e";
+					position: absolute;
+					bottom: 0;
+					font-size: 25px;
+					text-decoration: none;
+					left: 0;
+					z-index: 1;
+					border: 1px solid $color_brand_blue;
+					padding: 0.6rem .5rem;
+					background: $color_brand_blue;
+					color: $color_white;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

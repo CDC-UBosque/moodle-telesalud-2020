@@ -1,0 +1,17 @@
+.curso-cc .content-cc.article .content-right,
+#page-mod-book-view #region-main .curso-cc .content-cc.article .content-right,
+#region-main .curso-cc .content-cc.article .content-right {
+  position: relative;
+  z-index: 10; }
+  .curso-cc .content-cc.article .content-right h1,
+  #page-mod-book-view #region-main .curso-cc .content-cc.article .content-right h1,
+  #region-main .curso-cc .content-cc.article .content-right h1 {
+    margin: 2rem 0 1.5rem; }
+    .curso-cc .content-cc.article .content-right h1:first-child,
+    #page-mod-book-view #region-main .curso-cc .content-cc.article .content-right h1:first-child,
+    #region-main .curso-cc .content-cc.article .content-right h1:first-child {
+      margin: 0 0 1.5rem; }
+  .curso-cc .content-cc.article .content-right h3,
+  #page-mod-book-view #region-main .curso-cc .content-cc.article .content-right h3,
+  #region-main .curso-cc .content-cc.article .content-right h3 {
+    margin: 2rem 0 1.5rem; }

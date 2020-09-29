@@ -1,0 +1,57 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo-simple('Módulo 1', 'Ámbito jurídico: regulación para el sector, estrategias de licenciamiento ambiental', 'test-mod-1')
+						
+						+navegacion('#', 'disabled', '#', 'disabled')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					
+					//- +modulo-video('video-mod-1')
+					
+					h1 Presentación PPT Módulo 1 Ámbito jurídico
+					
+					+video('https://view.officeapps.live.com/op/embed.aspx?src=https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/pdf/mod-1/Presentacion-Modulo-1-ambito-juridico.ppt')
+					
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-1')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,62 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Lineamientos', 'Lineamientos para diplomado en herramientas para la gestión socio-ambiental en la industria de gas', 'test-mod-0')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323513&chapterid=9447', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323513&chapterid=9449', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					//- +modulo-video('video-mod-0')
+				
+					h1 Formato casos de estudio
+					
+					+video('https://view.officeapps.live.com/op/embed.aspx?src=https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/pdf/mod-0/FORMATO-CASOS-DE-ESTUDIO.docx')
+					
+					h5 Si desea descargar el formato haga click en el siguiente botón de descarga
+					
+					p: a.blue-btn(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/pdf/mod-0/FORMATO-CASOS-DE-ESTUDIO.docx' target='_blank')  descargar
+					
+					//- Foot notes
+					// +footnotes('footnotes-mod-2')
+					
+
+					//- Material modulo
+					// +material-modulo('material-mod-2')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

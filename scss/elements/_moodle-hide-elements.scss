@@ -1,0 +1,97 @@
+/* ==========================================
+	ELEMENTOS DE MOODLE PARA ESCONDER
+========================================== */
+#region-main div h2 {
+	display:none;
+}
+
+.box.generalbox.book_content h3,.box.generalbox.book_content h4,#region-main div h3,pageintro {
+	display:none;
+}
+
+#region-main div .modified {
+	display:none;
+}
+
+.navtop {
+	display:none;
+}
+
+.navbottom {
+	display:none;
+}
+
+#region-main .completionprogress {
+	float:none;
+}
+
+.course-content ul li.section.main {
+    margin-top: 0;
+    border-bottom: 0;
+}
+
+#course-block-layout aside>.block, #admin-block-layout aside>.block.estiloscompensar{
+	display: none;
+}
+
+.course-content{
+	.content{
+		margin: 0;
+		
+		.summary{
+			.no-overflow{
+				overflow: visible;
+			}
+		}
+	}
+}
+
+//ocultar barra izquierda
+#page-mod-page-view,
+#page-course-view-topics,
+#page-mod-book-view{
+	
+	#region-main{
+		width: 100%;
+	}
+	
+	#admin-block-layout,
+	#course-block-layout{
+		display: none;
+	}
+	
+}
+
+//mostrar barra izquierda al cambiar de rol
+#page-mod-page-view.userswitchedrole,
+#page-course-view-topics.userswitchedrole,
+#page-mod-book-view.userswitchedrole{
+	
+	#region-main{
+		width: 82.97872340425532%;
+		@media (min-width: 1350px){
+			    width: 82.90598290598291%;
+		}
+		@media (max-width: 979px) and (min-width: 768px){
+			width: 82.87292817679558%;
+		}
+		
+		@media (max-width: 767px){
+			width: 100%;
+		}
+	}
+	
+	#admin-block-layout,
+	#course-block-layout{
+		display: block;
+	} 
+	
+}
+
+.box.generalbox.book_content .no-overflow{
+	overflow: initial;
+}
+
+body{
+	overflow-x: hidden;
+}

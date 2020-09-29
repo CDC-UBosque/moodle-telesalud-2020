@@ -1,0 +1,181 @@
+// -----------------------
+// material modulo
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.pink-btn{
+		background: $color_brand_pink;
+		border: 1px solid $color_brand_pink;
+	    padding: 0.6rem 1rem 0.6rem;
+	    text-shadow: none;
+	    transition: all ease-in-out .2s;
+	    text-decoration: none;
+	    display: inline-block;
+	    margin: .3rem .5rem .3rem;
+	    border-radius: .5rem;
+	    @include font_universal (
+			$font_family_line_height: 22px,
+			$font_family_weight: 300,
+			$font_family_size: 16px,
+			$font_family_color: $color_white,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_regular
+		);
+	    
+	    .fa{
+		    width: initial;
+		}
+	    
+	    &:hover{
+		    background: $color_white;
+			border: 1px solid $color_brand_pink;
+			color: $color_text;
+	    }
+	    
+	    &:last-child{
+		    margin-right: 0;
+	    }
+	    
+	}
+	
+	.pink-line-btn{
+		background: $color_white;
+		border: 1px solid $color_brand_pink;
+	    padding: 0.6rem 1rem 0.6rem;
+	    text-shadow: none;
+	    transition: all ease-in-out .2s;
+	    text-decoration: none;
+	    display: inline-block;
+	    margin: .3rem .5rem .3rem;
+	    border-radius: .5rem;
+	    @include font_universal (
+			$font_family_line_height: 22px,
+			$font_family_weight: 300,
+			$font_family_size: 16px,
+			$font_family_color: $color_text,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_regular
+		);
+	    
+	    .fa{
+		    width: initial;
+		}
+	    
+	    &:hover{
+		    background: $color_brand_pink;
+			border: 1px solid $color_brand_pink;
+			color: $color_white;
+	    }
+	    
+	    &:last-child{
+		    margin-right: 0;
+	    }
+	    
+	}
+	
+	.white-btn{
+		background: $color_white;
+		border: 1px solid $color_white;
+	    border-radius: .5rem;
+	    padding: 0.3rem .5rem 0.3rem;
+	    text-shadow: none;
+	    transition: all ease-in-out .2s;
+	    text-decoration: none;
+	    display: inline-block;
+	    margin: .3rem .5rem .3rem 0;
+	    @include font_universal (
+			$font_family_line_height: 22px,
+			$font_family_weight: 300,
+			$font_family_size: 16px,
+			$font_family_color: $color_text,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_bold
+		);
+	    
+	    .fa{
+		    width: initial;
+		}
+	    
+	    &:hover{
+		    background: none;
+			border: 1px solid $color_white;
+			color: $color_text;
+	    }
+	    
+	    &:last-child{
+		    margin-right: 0;
+	    }
+	    
+	}
+	
+	a.disabled{
+		display: none !important;
+	}
+	
+	/*.pager{
+		
+		li{
+			
+			a{
+				background: $color_white;
+			    border-radius: 0;
+			    border: 1px solid $color_white;
+			    padding: 0.5rem 1rem;
+			    text-decoration: none;
+			    margin-right: 1rem;
+			    
+			    .fa{
+				    width: initial;
+			    }
+			    
+			    &:hover{
+				    background: $color_brand_blue;
+				    color: $color_white;
+				    border-radius: 0;
+			    }
+			    
+			}
+			
+			.forward{
+				margin-right: 0;
+			}
+			
+		}
+		
+		a{
+			background: $color_white;
+		    border-radius: 0;
+		    border: 1px solid $color_white;
+		    padding: 0.5rem 1rem;
+		    text-decoration: none;
+		    margin-right: 0rem;
+		    display: block;
+		    
+		    .fa{
+			    width: initial;
+		    }
+		    
+		    &:hover{
+			    background: $color_brand_blue;
+			    color: $color_white;
+			    border-radius: 0;
+		    }
+		    
+		}
+		
+		.disabled{
+			a{
+				opacity: 0.2;
+				&:hover{
+					background: $color_brand_blue;
+				    color: $color_white;
+				    border: 1px solid $color_brand_blue;
+				}
+			}
+		}
+		
+	}*/
+	
+}

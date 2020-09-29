@@ -1,0 +1,77 @@
+// -----------------------
+// tabs
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.bs-docs{
+		float: none;
+		margin: 2rem auto 4rem;
+		
+		.nav-tabs{
+			margin-bottom: 0;
+			padding: 0;
+			border-bottom: 1px solid $color_brand_blue;
+			
+			> li{
+				
+				margin-bottom: 0;
+				
+				> a{
+					border: 1px solid $color_white;
+					border-radius: 0;
+					margin: 0;
+					background: $color_brand_blue;
+					@include font_universal (
+						$font_family_line_height: 20px,
+						$font_family_weight: 300,
+						$font_family_size: 15px,
+						$font_family_color: $color_white,
+						$font_family_letter_spacing: 0,
+						$font_family_group: $font_lato_italic
+					);
+					
+					&:hover{
+						border-radius: 0;
+						border: 1px solid $color_brand_green;
+						color: $color_brand_blue;
+						background: $color_light_green;
+					}
+				}
+				
+			}
+			
+			.active{
+				
+				> a{
+					border-radius: 0;
+					border: 1px solid $color_brand_green;
+					color: $color_brand_blue;
+					background: $color_light_green;
+				}
+				
+			}
+			
+		}
+		
+		.tab-content{
+			
+			background: $color_light_green;
+			box-sizing: border-box;
+			padding: 0.5rem 2rem 0rem;
+			
+			> .tab-pane{
+				//display: block;
+			}
+			
+			> .tab-pane.active{
+				display: block;
+				opacity: 1;
+			}
+			
+		}
+		
+	}
+	
+}

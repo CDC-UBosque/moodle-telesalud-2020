@@ -1,0 +1,71 @@
+// -----------------------
+// banner home
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	#footer{
+		grid-gap: 1rem;
+		background: none;
+		justify-items: center;
+		@include display-grid;
+		@include grid-parent-1-columns (1fr);
+		@include max-width;
+		margin: 2rem auto;
+	    
+	    @media (max-width: $mobile){
+		    @include grid-parent-1-columns (1fr);
+	    }
+	    
+	    div{
+		    
+		    img{
+			    height: initial;
+				max-height: initial;
+		    }
+		    
+		    /*&:nth-child(1){
+			    justify-self: right;
+			    @include grid-child-column (1, 2);
+				@include grid-child-row (1, 2);
+				
+				@media (max-width: $mobile){
+					justify-self: center;
+				    @include grid-child-column (1, 2);
+					@include grid-child-row (1, 2);
+			    }
+	    
+		    }
+		    
+		    &:nth-child(2){
+			    justify-self: left;
+			    @include grid-child-column (2, 3);
+				@include grid-child-row (1, 2);
+				
+				@media (max-width: $mobile){
+					justify-self: center;
+				    @include grid-child-column (1, 2);
+					@include grid-child-row (2, 3);
+			    }
+			    
+		    }
+		    
+		    &:nth-child(3){
+			    text-align: center;
+			    justify-self: center;
+			    @include grid-child-column (1, 3);
+				@include grid-child-row (2, 3);
+				
+				@media (max-width: $mobile){
+				    @include grid-child-column (1, 2);
+					@include grid-child-row (3, 4);
+			    }
+				
+		    }*/
+		    
+	    }
+	    
+	}
+	
+}

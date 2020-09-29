@@ -1,0 +1,82 @@
+// -----------------------
+// banner home
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.banner-home{
+		@include grid-child-column (1, 3);
+		@include grid-child-row (1, 2);
+		@include display-grid;
+		@include grid-parent-12-columns (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
+		
+		.texto{
+			margin: 2rem 0;
+			position: relative;
+			z-index: 10;
+			@include grid-child-column (2, 7);
+			@include grid-child-row (2, 3);
+			
+			@media (max-width: $breakpoint_2){
+				@include grid-child-column (2, 10);
+			}
+			
+			@media (max-width: $breakpoint_4){
+				@include grid-child-column (2, 12);
+			}
+			
+			div{
+				
+				&:first-child{
+					padding: .5rem 1rem;
+					display: inline-block;
+					background: $color_brand_green;
+					@include font_universal (
+						$font_family_line_height: 17px,
+						$font_family_weight: 300,
+						$font_family_size: 20px,
+						$font_family_color: $color_text,
+						$font_family_letter_spacing: 5,
+						$font_family_group: $font_acherus_light
+					);
+					
+				}
+				
+				&:last-child{
+					padding: 1rem;
+					background: transparentize( $color_brand_blue, 0.15);
+					@include font_universal (
+						$font_family_line_height: 32px,
+						$font_family_weight: 300,
+						$font_family_size: 37px,
+						$font_family_color: $color_white,
+						$font_family_letter_spacing: -1,
+						$font_family_group: $font_acherus_black
+					);
+					
+					@media (max-width: $breakpoint_2){
+						font-size: 30px;
+					}
+					
+					@media (max-width: $breakpoint_3){
+						font-size: 25px;
+						line-height: 28px;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		.imagen{
+			background: url('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/banner/banner-principal.jpg');
+			//background: url('../images/banner/banner-principal.jpg');
+			@include grid-child-column (1, 13);
+			@include grid-child-row (1, 4);
+		}
+			
+	}
+	
+}

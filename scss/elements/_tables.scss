@@ -1,0 +1,119 @@
+// -----------------------
+// tables
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.table{
+		
+		border-top: 1px solid $color_light_green;
+		border-bottom: 1px solid $color_light_green;
+		padding: 1rem 0;
+		box-sizing: border-box;
+		display: table;
+		margin: 2rem auto 4rem;
+		
+		caption{
+			text-align: left;
+			margin-bottom: 1rem;
+			@include font_universal (
+				$font_family_line_height: 23px,
+				$font_family_weight: 300,
+				$font_family_size: 18px,
+				$font_family_color: $color_brand_blue,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font_acherus_black
+			);
+		}
+		
+		thead{
+			th{
+				background: $color_brand_blue;
+				border-left: 1px solid $color_white;
+				border-right: 1px solid $color_white;
+				vertical-align: middle;
+				text-align: center;
+				@include font_universal (
+					$font_family_line_height: 23px,
+					$font_family_weight: 300,
+					$font_family_size: 20px,
+					$font_family_color: $color_white,
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font_acherus_black
+				);
+				
+				&:first-child{
+					border-left: 0px;
+				}
+				
+				&:last-child{
+					border-right: 0px;
+				}
+				
+			}
+		}
+		
+		tr{
+			
+			td{
+				border-top: 1px solid $color_brand_green;
+				border-bottom: 1px solid $color_brand_green;
+				border-left: 1px solid $color_brand_green;
+				border-right: 1px solid $color_brand_green;
+				line-height: initial;
+				text-align: center;
+				padding: 0.5rem 0.4rem;
+				background: $color_white;
+				@include font_universal (
+					$font_family_line_height: 20px,
+					$font_family_weight: 300,
+					$font_family_size: 17px,
+					$font_family_color: $color_brand_blue,
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font_lato_regular
+				);
+				
+				&:first-child{
+					border-left: 0px;
+				}
+				
+				&:last-child{
+					border-right: 0px;
+				}
+				
+			}
+			
+			&:nth-child(even){
+				
+				td{
+					background: $color_light_green;
+				}
+				
+			}
+			
+			&:last-child{
+				
+				td{
+					border-bottom: 0px;
+				}
+				
+			}
+			
+			.small{
+				@include font_universal (
+					$font_family_line_height: 18px,
+					$font_family_weight: 300,
+					$font_family_size: 14px,
+					$font_family_color: $color_brand_blue,
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font_lato_italic
+				);
+				
+			}
+			
+		}
+		
+	}
+	
+}

@@ -1,0 +1,231 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Lineamientos', 'Desarrollo diplomado en herramientas para la gestión socio-ambiental en la industria de gas', 'test-mod-0')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323513&chapterid=9448', 'back', '#', 'disabled')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					//- +modulo-video('video-mod-0')
+				
+					h1 Cronograma
+									
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('')
+						+set('thead')
+							tr
+								th Módulos
+								th Actividades
+								th Inicio
+								th Cierre
+								th %
+						+set('tr')
+							tr
+								td(width='25%') Módulo 0
+									br/ Introducción al diplomado
+								td Activo  - Apertura Plataforma
+								td(colspan='2') 15 Noviembre 2019
+								td 
+							tr
+								td(rowspan='4') Módulo 1
+									br/ Ámbito Jurídico: Regulación para el sector , estrategias de licenciamiento ambiental  
+								td Revisión  de contenidos
+								td 16 / Noviembre
+								td 26 / Noviembre
+								td 5%
+							tr
+								td Video Conferencia
+								td 21 / Noviembre
+								td 
+								td 2%
+							tr
+								td Caso  de Estudio 
+								td 21 / Noviembre
+								td 21 / Noviembre
+								td 2%
+							tr
+								td Evaluación
+								td 26 / Noviembre
+								td 26 / Noviembre
+								td 4%
+								
+							tr
+								td(rowspan='4') Módulo 2
+									br/ Estudios ambientales : Tipos, elaboración, y control de calidad   
+								td Revisión  de contenidos
+								td 27 / Noviembre
+								td 10 / Diciembre
+								td 5%
+							tr
+								td Video Conferencia
+								td 28 / Noviembre
+								td 
+								td 2%
+							tr
+								td Caso  de Estudio 
+								td 30 / Noviembre
+								td 30 / Noviembre
+								td 2%
+							tr
+								td Evaluación
+								td 10 / Noviembre
+								td 10 / Noviembre
+								td 4%
+								
+							tr
+								td(colspan='5') PERIODO  AÑO ACADEMICO  2020
+								
+							tr
+								td(rowspan='4') Módulo 3
+									br/ Áreas especiales de manejo y sustracción de áreas   
+								td Revisión  de contenidos
+								td 20 / Enero
+								td 2 / Febrero
+								td 5%
+							tr
+								td Video Conferencia
+								td 30 / Enero
+								td 
+								td 2%
+							tr
+								td Caso  de Estudio 
+								td 1 / Febrero
+								td 2 / Febrero
+								td 2%
+							tr
+								td Evaluación
+								td 2 / Febrero
+								td 2 / Febrero
+								td 4%
+							
+							tr
+								td(rowspan='4') Módulo 4
+									br/ Uso y aprovechamiento de servicios ecosistemicos 
+								td Revisión  de contenidos
+								td 3 / Febrero
+								td 16 / Febrero
+								td 5%
+							tr
+								td Video Conferencia
+								td 13 / Febrero
+								td 
+								td 2%
+							tr
+								td Caso  de Estudio 
+								td 15 / Febrero
+								td 16 / Febrero
+								td 2%
+							tr
+								td Evaluación
+								td 16 / Febrero
+								td 16 / Febrero
+								td 4%
+								
+							tr
+								td(rowspan='4') Módulo 5
+									br/ Vedas y compensación por pérdida de biodiversidad , valoración económica 
+								td Revisión  de contenidos
+								td 17 / Febrero
+								td 1 / Marzo
+								td 5%
+							tr
+								td Video Conferencia
+								td 26 / Febrero
+								td 
+								td 2%
+							tr
+								td Caso  de Estudio 
+								td 29 / Febrero
+								td 1 / Marzo
+								td 2%
+							tr
+								td Evaluación
+								td 1 / Marzo
+								td 1 / Marzo
+								td 4%
+								
+							tr
+								td(rowspan='4') Módulo 6
+									br/ Comunidad :Servicios ambientales-interrelaciones comunidad y ambiente ,Consulta previa y análisis de entornos
+								td Revisión  de contenidos
+								td 2 / Marzo
+								td 15 / Marzo
+								td 5%
+							tr
+								td Video Conferencia
+								td 12 / Marzo
+								td 
+								td 2%
+							tr
+								td Caso  de Estudio 
+								td 14 / Marzo
+								td 15 / Marzo
+								td 2%
+							tr
+								td Evaluación
+								td 15 / Marzo
+								td 15 / Marzo
+								td 4%
+								
+								
+							tr
+								td(colspan='4') EXAMEN FINAL
+								td 9%
+							tr
+								td(colspan='4') TOTAL
+								td 100%
+								
+							tr
+								td(colspan='3') Semana de Recuperación 
+								td(colspan='2') 30 de marzo al 5 de Abril de 2020
+								
+							tr
+								td(colspan='3') Generación de Certificados 
+								td(colspan='2') 7 - 11 de Abril  de 2020
+					
+					//- Foot notes
+					// +footnotes('footnotes-mod-2')
+					
+
+					//- Material modulo
+					// +material-modulo('material-mod-2')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

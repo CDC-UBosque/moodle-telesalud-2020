@@ -1,0 +1,77 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Lineamientos', 'Carta de bienvenida educación continuada', 'test-mod-0')
+						
+						+navegacion('#', 'disabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323513&chapterid=9447', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					//- +modulo-video('video-mod-0')
+				
+					h1 Apreciados participantes del Diplomado:
+									
+					p Desde la Facultad de Ciencias, el programa de Biología y la División de Educación Continuada, de la Universidad El Bosque, les damos la más grata bienvenida al <b>DIPLOMADO EN HERRAMIENTAS PARA LA GESTIÓN SOCIO-AMBIENTAL EN LA INDUSTRIA DE GAS,</b> proyecto que cuidadosamente hemos construido.
+
+					p Hemos trabajado intensamente con un equipo de expertos de la más amplia experiencia, y gran reconocimiento, que responden a las exigencias de los Programas de la Facultad de Ciencias y el Programa de Biología.
+ 
+					p Hemos integrado un equipo interdisciplinario que hace posible la realización del Diplomado virtual, facilitando la posibilidad de impactar a un grupo muy amplio de profesionales  de distintas ciudades y regiones del país.
+
+					p El objetivo es desarrollar un Diplomado  virtual que les permita actualizar el conocimiento y les brinde las herramientas para desempeñar de mejor manera su trabajo, contribuyendo al mejoramiento de la  Calidad de vida de los usuarios, propósito que se alinea a la perfección con la orientación estratégica de la Universidad El Bosque.
+
+					p Durante estos meses tendrán acceso a la literatura  más actualizada, podrán interactuar con expertos y colegas, compartir puntos de vista, aportar desde su experiencia y lo más importante, entre todos, generar y actualizar conocimiento.  A través del diplomado, podrán realizar diferentes  actividades y hacer exámenes para verificar su aprendizaje.  
+
+					p Desde la Universidad El Bosque queremos que tengan una experiencia gratificante y de gran aprendizaje. 
+					
+					p Nuevamente Bienvenidos!!
+
+					p Cordialmente,
+					
+					h4 María del Rosario Bozón G.
+					h5 Directora Educación Continuada
+						br/ Universidad El Bosque
+
+					
+					//- Foot notes
+					// +footnotes('footnotes-mod-2')
+					
+
+					//- Material modulo
+					// +material-modulo('material-mod-2')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

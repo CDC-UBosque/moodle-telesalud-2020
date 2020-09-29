@@ -1,0 +1,55 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo-simple('Módulo 1', 'Ámbito jurídico: regulación para el sector, estrategias de licenciamiento ambiental', 'test-mod-1')
+						
+						+navegacion('#', 'disabled', '#', 'disabled')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					
+					//- +modulo-video('video-mod-1')
+					
+					h1 Lectura 2 C-746/12
+					
+					+video('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/pdf/mod-1/Lectura-2-C-746-12-min.pdf')
+
+					//- Material modulo
+					+material-modulo('material-mod-1')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

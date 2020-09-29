@@ -1,0 +1,69 @@
+$mobile: 380px;
+$mobile-medida: 380; //tamaño para calculo
+$tablet-3: 500px;
+$tablet-2: 600px;
+$tablet-1: 700px;
+$tablet: 788px; //768px;
+$tablet-medida: 788; //tamaño para calculo
+$desktop-small: 980px;
+$desktop-medida: 1180; // tamaño descontando padding para calculo
+
+// -----------------------
+// media queries
+// -----------------------
+$breakpoint_1: 1000px;
+$breakpoint_2: 780px;
+$breakpoint_3: 550px;
+$breakpoint_4: 350px;
+
+// -----------------------
+// color text
+// -----------------------
+$color_text: #000000;
+
+// -----------------------
+// general colors
+// -----------------------
+$color_brand_yellow: #F8BE2C;
+$color_brand_pink: #CF1073;
+$color_brand_blue:  #1A1B6C;
+$color_brand_green:  #69C194;
+$color_light_green:  #D0E5D7;
+$color_white:  #ffffff;
+
+
+// -----------------------
+// font family acherus
+// -----------------------
+$font_acherus_black: 'acherus_grotesqueblack'; // black
+$font_acherus_black_italic: 'acherus_grotesqueblack_italic'; // black light
+$font_acherus_bold: 'acherus_grotesquebold'; // bold
+$font_acherus_bold_italic: 'acherus_grotesquebold_italic'; // bold italic
+$font_acherus_extrabold: 'acherus_grotesqueextrabold'; // extrabold
+$font_acherus_extrabold_italic: 'acherus_grotesqueXBdIt'; // extrabold italic
+$font_acherus_regular_italic: 'acherus_grotesqueRgIt'; // regular italic
+$font_acherus_light: 'acherus_grotesquelight'; // light
+$font_acherus_light_italic: 'acherus_grotesquelight_italic'; // light italic
+$font_acherus_medium: 'acherus_grotesquemedium'; // medium
+$font_acherus_medium_italic: 'acherus_grotesqueMdIt'; // medium italic
+$font_acherus_regular: 'acherus_grotesqueregular'; // medium italic
+$font_acherus_thin: 'acherus_grotesquethin'; // thin
+$font_acherus_thin_italic: 'acherus_grotesquethin_italic'; // thin italic
+$font_acherus_ultralight: 'acherus_grotesqueultralight'; // ultralight
+$font_acherus_ultralight_italic: 'acherus_grotesqueultraLtIt'; // ultralight italic
+$font_acherus_ultralight_italic: 'acherus_grotesqueultraLtIt'; // ultralight italic
+
+
+// -----------------------
+// font family lato
+// -----------------------
+$font_lato_black: 'latoblack'; // black
+$font_lato_black_italic: 'latoblack_italic'; // black italic
+$font_lato_bold: 'latobold'; // bold
+$font_lato_bold_italic: 'latobold_italic'; // bold italic
+$font_lato_hairline: 'latohairline'; // hairline
+$font_lato_hairline_italic: 'latohairline_italic'; // hairline italic
+$font_lato_italic: 'latoitalic'; // italic
+$font_lato_light: 'latolight'; // light
+$font_lato_light_italic: 'latolight_italic'; // light italic
+$font_lato_regular: 'latoregular'; // regular

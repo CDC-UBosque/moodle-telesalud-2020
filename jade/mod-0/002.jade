@@ -1,0 +1,150 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Lineamientos', 'Lineamientos para diplomado en herramientas para la gestión socio-ambiental en la industria de gas', 'test-mod-0')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323513&chapterid=9346', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323513&chapterid=9448', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					//- +modulo-video('video-mod-0')
+				
+					h1 Lineamientos
+									
+					p Para el desarrollo exitoso del programa, la División de Educación Continuada de la Universidad El Bosque ha definido los siguientes lineamientos que deben ser cumplidos para realizar y aprobar el Diplomado. Por favor lea con atención las siguientes indicaciones:
+					
+					ol
+						li El programa es de carácter virtual con una duración de  100 horas  . Se desarrollará a través de la plataforma Moodle 3.4, la cual le permitirá avanzar en su aprendizaje en un entorno seguro, amigable e intuitivo al cual podrá acceder a cualquier hora y desde donde usted desee.
+
+						li Para facilitar su acceso a la plataforma, le sugerimos que lea el Instructivo de Ingreso que le ha sido enviado previamente a su correo electrónico. Si llega a tener inconvenientes para ingresar, por favor escríbanos a 'Coordinacion TIC'  
+							a(href='mailto:support@coordinaciontic.freshdesk.com' target='_blank')    support@coordinaciontic.freshdesk.com
+
+						li Le recomendamos descargar e instalar Adobe Reader 11 para facilitar la visualización de los instructivos y demás documentos relacionados con el desarrollo del Diplomado. En caso de que no lo tenga instalado, puede descargarlo sin costo en este vínculo  
+							a(href='https://get.adobe.com/es/reader/' target='_blank')    https://get.adobe.com/es/reader/
+
+						li Si desea conocer más acerca de la Política de Educación Virtual y a Distancia de la Universidad El Bosque, puede descargarla en este vínculo:     
+							a(href='https://www.unbosque.edu.co/sites/default/files/2017-06/politica_educacion_virtual_distancia.pdf' target='_blank')    https://www.unbosque.edu.co/sites/default/files/2017-06/politica_educacion_virtual_distancia.pdf
+							
+					
+					h1 Aspectos Generales del Programa
+					
+					ol 
+						li El Diplomado inicia el 14   de Noviembre   y su primera etapa finaliza el   14 Diciembre de 2109, retomando el 20 de Enero  de 2020 terminando en Marzo 29 completando los 6 módulos de los que se componen  este diplomado
+
+						li La Dirección Académica del programa está liderada por la Biol. MsC Clara Santafe Millan, directora del programa de Biología  y del grupo de investigación de Biología Categoría A Colciencias y consultora en estas áreas.
+
+						li Los Docentes que los acompañarán serán profesionales en áreas afines con Biología, Ingeniería Forestal ,Derecho entre otros con trayectoria en el sector público (ANLA) , secretaría dsitrital de Ambiente y consultora en el sector privado que acompaña el desarrollo nacional de la industria del gas, hidrocarburos y vías entre otros.
+
+						li El diplomado  de 100 horas ( se incluye trabajo en la plataforma, encuentro con el docente, acompañamiento con los tutores y trabajo independiente)contara con el acompañamiento de dos tutores académicos con el fin de incentivar la participación del estudiante y estar atento al solución de cualquier inquietud de los mismos, esta actividad se realizar mediante WhatsApp en las líneas 317251111 y 3188051663  en los horarios de 4- 6 pm durante el desarrollo de los 6 módulos y la semana de refuerzo.
+
+						li La estructura general del Diplomado es el siguiente:
+							a(href='https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323513&chapterid=9449')    Haz click aquí para ver más
+							
+						li En la plataforma Moodle encontrará cada uno de los módulos con su contenido y las respectivas actividades. Cada una de ellas debe desarrollarse en el tiempo establecido de acuerdo con el cronograma anterior, teniendo en cuenta que siempre podrá contar con el soporte técnico de la plataforma durante las fechas de desarrollo de los mismos.
+
+						li Cada uno de los módulos tendrá la siguiente estructura: Lecturas libres y/o guiadas, video de introducción, texto del tema, actividad de repaso, videoconferencia con el tutor y evaluación de contenidos. 
+
+						li Los estudiantes trabajaran en la consulta de casos de estudio para cada módulo permitiendo construir un proyecto final , diligenciado en la plantilla del curso
+
+						li Los módulos tendrán una duración de dos semanas calendario (14 días) con dos días para participar en el foro y un examen al final con una duración de tres días para presentarlo. Es responsabilidad de cada participante realizar las actividades propuestas en el tiempo establecido. 
+
+						li 	Para recibir la certificación, el participante debe aprobar todos los módulos sin excepción, obteniendo una nota superior a 3.5 sobre 5.0.
+
+						li 	Durante el desarrollo del programa, a través de la plataforma se enviarán correos de recordatorio que incluyen un calendario de seguimiento al avance del Diplomado y le permitirán al participante tener presente las actividades que debería tener desarrolladas junto con las que están próximas a iniciar.
+
+						li 	Desde la División de Educación Continuada de la Universidad El Bosque estamos trabajando para contribuir con el fortalecimiento de una cultura de la planeación y la calidad, mediante la aproximación progresiva a la excelencia en nuestros procesos, por esto, al finalizar el diplomado deseamos conocer su opinión. Para ello les solicitamos el favor de diligenciar la encuesta de autoevaluación una vez se terminen las actividades académicas. Esta es una condición necesaria para la expedición del certificado.
+
+						
+					h1 Criterios de aprobación del diplomado por módulo
+					
+					ul
+						li Aprobación del examen 	70%.
+						li Participación en el Foro	20%
+						li Actividades de Construcción 	10%
+						
+					h1 Requerimientos técnicos para el uso de la plataforma virtual
+					
+					p Para asegurar un acceso adecuado a los recursos virtuales, se recomienda que los usuarios dispongan como mínimo de los siguientes recursos:
+					
+					ul
+						li SISTEMA OPERATIVO: Windows  XP  o  versión superior, Sistema OS o Linux.
+						li NAVEGADORES  WEB 
+						ul
+							li Mozilla Firefox
+							li Google Crome
+						li PLUGIN
+						ul
+							li Zoom Meetings
+							li Adobe Acrobat Reader
+						li COMPUTADOR
+						ul
+							li Procesador  Pentium IV o superior a 2.8 mHz
+							li Memoria  RAM 1 G
+							li Tarjeta de Red
+						li CONEXIÓN A INTERNET
+						ul
+							li Wifi
+							li Acceso a operador de  internet  
+							li Se recomienda conexión a internet por Cable
+
+
+
+					h1 Instructivo de ingreso 
+					
+					p Apreciado participante,
+
+					p A continuación se describe el procedimiento de inscripción, matrícula e ingreso al Diplomado en herramientas para la gestión socio-ambiental en la industria de Gas, Lea cuidadosamente estas instrucciones y si tiene alguna inquietud, comuníquese al correo electrónico    
+						a(href='mailto:educonsoporte@unbosque.edu.co' target='_blank')    educonsoporte@unbosque.edu.co
+
+
+
+
+					p Cordialmente,
+					
+					h4 María del Rosario Bozón G.
+					h5 Directora Educación Continuada
+						br/ Universidad El Bosque
+					
+					//- Foot notes
+					// +footnotes('footnotes-mod-2')
+					
+
+					//- Material modulo
+					// +material-modulo('material-mod-2')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

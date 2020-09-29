@@ -1,0 +1,71 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 1', 'Ámbito jurídico: regulación para el sector, estrategias de licenciamiento ambiental', 'test-mod-1')
+						
+						+navegacion('#', 'disabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323678&chapterid=9353', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					+modulo-video('video-mod-1')
+				
+					h1 Normatividad ambiental, línea de tiempo
+									
+					p La regulación en temas ambientales se viene desarrollando aproximadamente desde la década de los 50 en Colombia, como resultado de la necesidad de controlar el uso de los recursos naturales del país. El Gobierno Nacional emitió el Decreto 2278 de 1953 con relación a la vigilancia, conservación, mejoramiento, reserva, repoblación y explotación de bosques.<sup>1</sup> Donde se definieron legalmente por primera vez las áreas de protección, con el fin de defender  cuencas de abastecimiento de aguas, embalses, acequias, evitar desprendimientos de tierras  y rocas, sujetar terrenos, defender  vías de comunicación, regularizar cursos de aguas, o contribuir a la salubridad.
+					p Este primer acercamiento a la protección de áreas y regulación de usos, nos permite reconocer que la normatividad ambiental es un concepto que inquieta a la sociedad desde años atrás. En 1959 el Congreso de Colombia promulgó la Ley 2, para el desarrollo de la economía forestal y protección de los suelos, las aguas y la vida silvestre. Así mismo, se habló de delimitar y reservar de manera especial, por medio de decretos los "Parques Nacionales Naturales", en las distintas zonas del en las cuales quedará prohibida la adjudicación de baldíos, las ventas de tierras, la caza, la pesca y toda actividad industrial, ganadera o agrícola, distinta a la del turismo o a aquellas que el Gobierno Nacional considere convenientes, con el objeto de conservar la flora y fauna nacionales.<sup>2</sup>
+					p En el año 1974 se dictó el Código Nacional de Recursos Naturales Renovables y de Protección al Medio Ambiente, fundado en el principio que el ambiente es patrimonio común de la humanidad y necesario para la supervivencia y el desarrollo económico y social de los pueblos. Este documento marcó un hito en la historia del país, ya que estaba recopilando una serie de conceptos que serían perfeccionados más adelante como tasas retributivas, efecto ambiental, zonificación, recursos naturales no renovables, entre otros.  
+					p Para el año 1991 el tema ambiental se constitucionalizó, la mención del medio ambiente en la norma de  mayor rango obliga, además, a considerarlo como interés jurídico merecedor de la mayor protección, al que ya no se puede considerar, en ninguna circunstancia, como periférico ni secundario.<sup>3</sup> Con la constitución Política de 1991, denominada “Constitución Ecológica”, se le otorgó un peso preponderante a la defensa del medio ambiente y dispuso múltiples normas que lo conciben como objetivo, derecho individual, derecho colectivo y deber.<sup>4</sup>
+					p La Ley 99 de 1993 estructura el sistema ambiental en el País, en la cual se determina como máxima autoridad ambiental al MMA, se crea el SINA y el Consejo Nacional Ambiental; constituyen 16 nuevas CAR y 5 autoridades ambientales para los grandes centros urbanos; crea la Unidad Administrativa Especial del Sistema de Parques Nacionales Naturales; crea 5 institutos de investigación considerados como adscritos al SINA (IAvH, SINCHI, IDEAM, INVEMAR, Instituto de Investigaciones del Pacífico) entre otras. <sup>5</sup>
+					p Puede afirmarse que el desarrollo normativo de la licencia ambiental ha tenido varios cambios a lo largo del tiempo, pero se ha mantenido la necesidad de tener en cuenta en los estudios de impacto, las circunstancias socioeconómicas de las comunidades que residen en el área de influencia. El deber de consultar a la población en general y a las comunidades diferenciadas como las indígenas, étnicas y afrocolombianos sobre los cambios o impactos que se generan con la construcción de obras y proyectos sobre los recursos naturales, se fortalece a partir de los principios y valores de la Constitución de 1991.<sup>6</sup>
+					
+					
+					h1 Definición Licencia Ambiental
+					
+					p La licencia ambiental es la autorización que otorga la autoridad ambiental competente para la ejecución de un proyecto, obra o actividad, que de acuerdo con la ley y los reglamentos, pueda producir deterioro grave a los recursos naturales renovables, o al medio ambiente, o introducir modificaciones considerables o notorias al paisaje; la cual sujeta al beneficiario de esta, al cumplimiento de los requisitos, términos, condiciones y obligaciones que la misma establezca en relación con la prevención, mitigación, corrección, compensación y manejo de los efectos ambientales del proyecto, obra o actividad autorizada.<sup>7</sup> 
+					p Es el acto administrativo de autorización que otorga a su titular el derecho de realizar una obra o actividad con efectos sobre el ambiente, de conformidad con las condiciones técnicas y jurídicas establecidas previamente por la autoridad competente. La licencia ambiental es esencialmente revocable. La razón de ser de las licencias ambientales es la protección de los derechos individuales y colectivos. Corresponde a las autoridades públicas velar por estos derechos, en particular cuando el riesgo de su vulneración aumenta debido al desarrollo de actividades riesgosas.<sup>8</sup> 
+					p La licencia ambiental deberá obtenerse a la iniciación del proyecto, obra o actividad y llevará implícitos todos los permisos, autorizaciones y/o concesiones para el uso, aprovechamiento y/o afectación de los recursos naturales renovables que sean necesarios por el tiempo de vida útil del proyecto, obra o actividad. Por lo anterior, el uso, aprovechamiento y/o afectación de los recursos naturales renovables deberán ser claramente identificados en el respectivo estudio de impacto ambiental.
+
+					
+					//- Foot notes
+					+footnotes('footnotes-mod-1')
+					
+
+					//- Material modulo
+					+material-modulo('material-mod-1')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

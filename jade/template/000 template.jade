@@ -1,0 +1,125 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 1', 'You’re a very talented young man, with your own clever thoughts and ideas.', '#test-mod-1')
+						
+						+navegacion('#', 'back', 'Anterior', '#', 'forward', 'Siguiente')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					h1 Titulo
+					
+					+modulo-video('video-mod-1')
+									
+					h3 Drive us out of here! Did he just throw my cat out of the window?
+					
+					p We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! ‘Cause maybe if we screw up this planet enough, they won’t want it anymore! Did he just throw my cat out of the window? Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?
+					p You really think you can fly that thing? Remind me to thank John for a lovely weekend. Forget the fat lady! You’re obsessed with the fat lady! Drive us out of here! Did he just throw my cat out of the window? Must go faster. Eventually, you do plan to have dinosaurs on your dinosaur tour, right?
+					p Forget the fat lady! You’re obsessed with the fat lady! Drive us out of here! Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Hey, you know how I’m, like, always trying to save the planet? Here’s my chance. You’re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+					p Hey, you know how I’m, like, always trying to save the planet? Here’s my chance. We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! ‘Cause maybe if we screw up this planet enough, they won’t want it anymore! They’re using our own satellites against us. And the clock is ticking.
+					p Yeah, but your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should. I was part of something special. You’re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+					
+					
+					//- ---------------- 
+					//- ---------------- Accordion
+					//- ---------------- 
+					+accordion('accordion1')
+						+accordion-item('#accordion1', '#box1', 'box1', 'Titulo')
+							p Yeah, but your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should. I was part of something special. You’re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+						+accordion-item('#accordion1', '#box2', 'box2', 'Titulo')
+							p Yeah, but your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should. I was part of something special. You’re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+						+accordion-item('#accordion1', '#box3', 'box3', 'Titulo')
+							p Yeah, but your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should. I was part of something special. You’re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+							
+					
+					//- ---------------- 
+					//- ---------------- Image / video + caption
+					//- ---------------- 		
+					+image-caption('https://cdn2.geckoandfly.com/wp-content/uploads/2012/06/10.5.10.6-830x518.jpg#.XQ1SKt28bJQ.link', 'example-1', 'https://cdn2.geckoandfly.com/wp-content/uploads/2012/06/10.5.10.6-830x518.jpg#.XQ1SKt28bJQ.link', 'Texto para acompañar imagen')
+						span Yeah, but your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should. I was part of something special. You’re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+						
+						
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							li: a(href='#3' data-toggle='tab') 3
+							li: a(href='#4' data-toggle='tab') 4
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+							div.tab-pane.fade#2
+								p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+							div.tab-pane.fade#3
+								p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+							div.tab-pane.fade#4
+								p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+								
+					
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('caption')
+						+set('thead')
+							tr
+								th content 1
+								th content 2
+								th content 3
+						+set('tr')
+							tr
+								td content 1
+								td content 2
+								td content 3
+							tr
+								td content 1
+								td content 2
+								td content 3
+					
+								
+								
+				
+						
+				
+					//- Material modulo
+					+material-modulo('material-mod-1')
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

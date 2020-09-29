@@ -1,0 +1,322 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 1', 'Ámbito jurídico: regulación para el sector, estrategias de licenciamiento ambiental', 'test-mod-1')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323678&chapterid=9353', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323678&chapterid=9355', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					
+					+modulo-video('video-mod-1')
+					
+					h1 Proceso de Licenciamiento Ambiental (Decreto 1076/2015)
+									
+					p El licenciamiento ambiental lleva consigo una serie de pasos, con requerimientos documentales y tiempos específicos, que permiten a la Autoridad Ambiental evaluar las características de los proyectos y por ende los requerimientos 
+					
+					
+					ol
+						li <b>Evaluación de la necesidad de presentar diagnóstico ambiental de alternativas (DAA).</b> En los casos contemplados en el artículo 2.2.2.3.2.2 del decreto 1076 de 2015 , se surtirá el siguiente procedimiento:
+					
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('')
+						+set('thead')
+							tr
+								th Etapa
+								th Responsable
+								th Requerimiento
+								th Tiempo
+						+set('tr')
+							tr
+								td(rowspan='2') Solicitud de elaboración y presentación de Diagnóstico Ambiental de Alternativas (DAA)
+								td(rowspan='2') Solicitante
+								td Formular petición por escrito dirigida a la autoridad ambiental competente, en la cual solicitará que se determine si el proyecto, obra o actividad requiere o no de la elaboración y presentación de Diagnóstico Ambiental de Alternativas (DAA).
+								td(rowspan='2') Inicio del proceso
+							tr
+								td Descripción, el objetivo y alcance del proyecto y su localización mediante coordenadas y planos.
+							tr
+								td Respuesta de la Autoridad Ambiental
+								td ANLA
+								td La autoridad ambiental se pronunciará, mediante oficio acerca de la necesidad de presentar o no DAA, adjuntando los términos de referencia para elaboración del DAA o del EIA según el caso.
+								td Quince (15) días hábiles siguientes a la radicación de la solicitud
+							tr
+								td(rowspan='3') Inicio de trámite de evaluación de diagnóstico
+								td(rowspan='3') ANLA
+								td Expedir un acto administrativo de inicio de trámite de evaluación de diagnóstico ambiental de alternativas (DAA). 
+								td(rowspan='2') Será comunicado en los términos de la Ley 1437 de 2011 y se publicará en el boletín de la autoridad ambiental competente, en los términos del artículo 70 de la Ley 99 de 1993.
+							tr
+								td Revisará que el estudio se ajuste a los requisitos mínimos contenidos en el Manual de Evaluación de Estudios Ambientales.
+							tr
+								td Realizará visita al proyecto cuando así lo considere pertinente.
+								td Quince (15) días hábiles
+							tr
+								td(rowspan='3') Información adicional
+								td ANLA
+								td Podrá requerir al solicitante y por una sola vez, la información adicional que considere pertinente para decidir.
+								td Tres (3) días hábiles siguientes
+							tr
+								td Solicitante
+								td Allegar la información requerida deberá ser exclusivamente la requerida y sólo podrá ser aportada por una única vez. En el evento en que el solicitante allegue información diferente a la consignada en el requerimiento o la misma sea sujeta a complementos de manera posterior a la inicialmente entregada, la autoridad ambiental competente no considerará dicha información dentro del proceso de evaluación de la solicitud. 
+								td Un (1) mes
+							tr
+								td &nbsp;
+								td ANLA
+								td En el evento que el solicitante no allegue la información en los términos establecidos en el numeral anterior, la autoridad ambiental ordenará el archivo de la solicitud de pronunciamiento sobre el DAA y realizará la devolución de la totalidad de la documentación aportada, mediante acto administrativo que se notificará en los términos de la ley. 
+								td &nbsp;
+							tr
+								td(rowspan='2') Evaluación del DAA
+								td(rowspan='2') ANLA
+								td Evaluar el DAA, elegir la alternativa sobre la cual deberá elaborarse el correspondiente Estudio de Impacto Ambiental y fijar los términos de referencia respectivos, mediante acto administrativo que se notificará de conformidad con lo dispuesto en la Ley 1437 de 2011 y se publicará en el boletín de la autoridad ambiental en los términos del artículo 71 de la Ley 99 de 1993.
+								td Diez (10) días hábiles
+							tr
+								td Cuando el diagnóstico ambiental de alternativas (DAA), no cumpla con los requisitos mínimos establecidos en el Manual de Evaluación de Estudios Ambientales y los criterios fijados en la norma la autoridad mediante acto administrativo dará por terminado el trámite.
+								td Finalizado el proceso de evaluación
+							tr
+								td Nueva solicitud
+								td Solicitante
+								td Podrá presentar una nueva solicitud.
+								td Definido por el solicitante
+								
+					p Presentado el diagnóstico, la autoridad ambiental escogerá una de las opciones, de manera discrecional pero razonable.<sup>10</sup>
+					
+					ol(start='2')
+						li <b>Elaboración del Estudio de Impacto ambiental -(EIA):</b> Una vez surtido el procedimiento del diagnóstico ambiental de alternativas (DAA), el interesado en obtener la licencia ambiental deberá elaborar y radicar ante la autoridad ambiental competente, el Estudio de Impacto ambiental.<sup>11</sup>
+						
+					p ¿Que es un EIA?. Es el instrumento básico para la toma de decisiones sobre los proyectos, obras o actividades que requieren licencia ambiental. Este estudio debe ser elaborado de conformidad con la Metodología General para la Presentación de Estudios Ambientales y los términos de referencia expedidos para el efecto, el cual deberá incluir como mínimo lo siguiente:
+					
+					
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('')
+						+set('thead')
+							tr
+								th Requisito
+								th Descripción
+						+set('tr')
+							tr
+								td Información del proyecto
+								td Localización, infraestructura, actividades del proyecto y demás información que se considere pertinente
+							tr
+								td Caracterización del área de influencia del proyecto
+								td Caracterización del área de influencia del proyecto, para los medios abiótico, biótico y socioeconómico.
+							tr
+								td Demanda de recursos naturales por parte del proyecto
+								td Se presenta la información requerida para la solicitud de permisos relacionados con la captación de aguas superficiales, vertimientos, ocupación de cauces, aprovechamiento de materiales de construcción, aprovechamiento forestal, recolección de especímenes de la diversidad biológica con fines no comerciales, emisiones atmosféricas, gestión de residuos sólidos, exploración y explotación de aguas subterráneas.
+							tr
+								td Impactos ambientales y análisis de riesgos
+								td Información relacionada con la evaluación de impactos ambientales y análisis de riesgos.
+							tr
+								td Zonificación de manejo ambiental
+								td Definida para el proyecto, obra o actividad para la cual se identifican las áreas de exclusión, las áreas de intervención con restricciones y las áreas de intervención.
+							tr
+								td Evaluación económica
+								td De los impactos positivos y negativos del proyecto.
+							tr
+								td Plan de manejo ambiental del proyecto
+								td Expresado en términos de programa de manejo, cada uno de ellos diferenciado en proyectos y sus costos de implementación.
+							tr
+								td Programa de seguimiento y monitoreo
+								td Para cada uno de los medios abiótico, biótico y socioeconómico.
+							tr
+								td Plan de contingencias
+								td Para la construcción y operación del proyecto que incluya la actuación para derrames, incendios, fugas, emisiones y/o vertimientos por fuera de los límites permitidos.
+							tr
+								td Plan de desmantelamiento y abandono
+								td En el que se define el uso final del suelo, las principales medidas de manejo, restauración y reconformación morfológica.
+							tr
+								td Plan de inversión del 1%,
+								td En el cual se incluyen los elementos y costos considerados para estimar la inversión y la propuesta de proyectos de inversión, de conformidad con lo dispuesto en el Decreto 1900 de 2006 o la norma que lo modifique, sustituya o derogue.
+							tr
+								td Plan de compensación
+								td Por pérdida de biodiversidad de acuerdo con lo establecido en la Resolución 1517 del 31 de agosto de 2012 o la norma que modifique, sustituya o derogue.
+
+					
+					ol(start='3')
+						li <b>Solicitud de la Licencia Ambiental:</b> La autoridad ambiental evaluará el estudio con base en los criterios generales definidos en el Manual de Evaluación de Estudios Ambientales de proyectos. Así mismo, deberá verificar que este cumple con el objeto y contenido establecidos en el decreto 1076 de 2015; contenga información relevante y suficiente acerca de la identificación y calificación de los impactos, especificando cuáles de ellos no se podrán evitar o mitigar, así como las medidas de manejo ambiental correspondientes. 
+						
+					p El interesado en obtener licencia ambiental o solicitante deberá radicar ante la autoridad ambiental competente, el Estudio de Impacto Ambiental y anexar la siguiente documentación: 	
+					
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('')
+						+set('thead')
+							tr
+								th Requerimiento
+								th Aclaración
+						+set('tr')
+							tr
+								td Formulario Único de Licencia Ambiental. 
+								td N/A	
+							tr
+								td Planos que soporten el EIA.
+								td De conformidad con lo dispuesto en la Resolución 1415 de 2012, que modifica y actualiza el Modelo de Almacenamiento Geográfico (Geodatabase) o la norma que la sustituya, modifique o derogue.
+							tr
+								td Costo estimado de inversión y operación del proyecto
+								td N/A
+							tr
+								td Poder debidamente otorgado cuando se actúe por medio de apoderado.
+								td N/A
+							tr
+								td Constancia de pago para la prestación del servicio de evaluación de la licencia ambiental.
+								td Para las solicitudes radicadas ante la ANLA, se deberá realizar la autoliquidación previo a la presentación de la solicitud de licencia ambiental. En caso de que el usuario requiera para efectos del pago del servicio de evaluación la liquidación realizada por la autoridad ambiental competente, ésta deberá ser solicitada por lo menos con quince (15) días hábiles de antelación a la presentación de la solicitud de licenciamiento ambiental.
+							tr
+								td Documento de identificación o certificado de existencia y representación legal.
+								td En caso de personas jurídicas.
+							tr
+								td Certificado del Ministerio del Interior sobre presencia o no de comunidades étnicas y de existencia de territorios colectivos.
+								td De conformidad con lo dispuesto en las disposiciones relacionadas con el Protocolo de Coordinación lnterinstitucional para la Consulta Previa. 
+							tr
+								td Copia de la radicación del documento exigido por el Instituto Colombiano de Antropología e Historia (ICANH)
+								td A través del cual se da cumplimiento a lo establecido en la Ley 1185 de 2008.
+							tr
+								td Formato aprobado por la autoridad ambiental competente.
+								td Para la verificación preliminar de la documentación que conforma la solicitud de licencia ambiental.
+								
+								
+								
+					p Cuando se trate de proyectos, obras o actividades de competencia de la ANLA, el solicitante deberá igualmente radicar una copia del Estudio de Impacto Ambiental ante las respectivas autoridades ambientales regionales. De la anterior radicación se deberá allegar constancia a la ANLA en el momento de la solicitud de licencia ambiental. 
+					p Hay que tener en cuenta que la concesión de una licencia no finaliza el proceso de protección del ambiente respecto de una obra o un proyecto que lo pueda afectar; a partir de la concesión de la misma debe examinarse el cumplimiento de los requisitos y condiciones en ella previstos, por cuanto de esto depende que verdaderamente se alcance el objetivo propuesto, cual es la efectiva protección del entorno en que la actividad tiene lugar<sup>12</sup>
+					
+					ol(start='4')
+						li <b>Evaluación del Estudio de Impacto Ambiental:</b> Una vez realizada la solicitud de licencia ambiental se surtirá el siguiente trámite.
+						
+						
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('')
+						+set('thead')
+							tr
+								th Etapa
+								th Responsable
+								th Requerimiento
+								th Tiempo
+						+set('tr')
+							tr
+								td Inicio de trámite de licencia ambiental
+								td ANLA
+								td A partir de la fecha de radicación, de la solicitud con el lleno de los requisitos exigidos, la autoridad ambiental competente de manera inmediata procederá a expedir el acto administrativo de inicio de trámite de licencia ambiental.
+								td En los términos de la Ley 1437 de 2011 y se publicará en el boletín de la autoridad ambiental competente en los términos del artículo 70 de la Ley 99 de 1993.	
+							tr
+								td(rowspan='4') Radicar el Estudio de Impacto Ambiental
+								td Solicitante 
+								td Radicación del estudio de impacto ambiental en la autoridad o autoridades ambientales con jurisdicción en el área del proyecto, donde se pretenda hacer uso y/o aprovechamiento de los recursos naturales renovables, para emitir el respectivo concepto sobre los mismos y enviarlo a la ANLA.
+								td Definido por el solicitante
+							tr
+								td Autoridad o autoridades ambientales con jurisdicción 
+								td Emitir el respectivo concepto sobre los mismos y enviarlo a la ANLA.
+								td Quince (15) días hábiles
+							tr
+								td ANLA 
+								td Cuando considere pertinente requerirá información adicional relacionada con el uso y/o aprovechamiento de los recursos naturales renovables a la autoridad o autoridades ambientales con jurisdicción.
+								td Inicio de trámite de licencia ambiental.
+							tr
+								td Autoridad o autoridades ambientales con jurisdicción 
+								td Emitir el correspondiente concepto técnico sobre los requerimientos de la ANLA.
+								td Quince (15) días hábiles
+							tr
+								td Evaluación del estudio ambiental
+								td ANLA
+								td Evaluará que el estudio ambiental presentado se ajuste a los requisitos mínimos contenidos en el Manual de Evaluación de Estudios Ambientales
+								td &nbsp;
+							tr
+								td Visita al proyecto
+								td ANLA
+								td Realizará visita al proyecto, cuando la naturaleza del mismo lo requiera
+								td Veinte (20) días hábiles después del acto administrativo de inicio
+							tr
+								td(rowspan='4') Reunión adicional 
+								td(rowspan='3') ANLA
+								td Cuando no se estime pertinente la visita o habiendo vencido el anterior lapso la podrá realizar una reunión con el fin de solicitar por una única vez la información adicional que se considere pertinente. 
+								td(rowspan='4') Diez (10) días hábiles
+							tr
+								td Dicha reunión será convocada mediante oficio, a la cual deberá asistir por lo menos el solicitante, o representante legal en caso de ser perso­na jurídica o su apoderado debidamente constituido, y por parte de la autoridad ambiental competente deberá asistir el funcionario delegado para tal efecto
+							tr
+								td Toda decisión que se adopte en esta reunión se notificará verbalmente, debiendo dejar precisa constancia a través de acta de las decisiones adoptadas
+							tr
+								td Solicitante
+								td La inasistencia a esta reunión no impedirá la realización de la misma, salvo cuando por justa causa el peticionario lo solicite.
+							tr
+								td(rowspan='3') Información complementaria
+								td(rowspan='2') Solicitante
+								td Allegar exclusivamente la información solicitada en el requerimiento efectuado por la autoridad ambiental y solo podrá ser aportada por una única vez.
+								td (1) mes
+							tr
+								td Este término podrá ser prorrogado de manera excepcional, hasta antes del vencimiento del plazo y por un término igual, previa solicitud.
+								td de conformidad con el artículo 17 de la Ley 1437 de 2011 
+							tr
+								td ANLA
+								td En el evento de que el solicitante no allegue la información se ordenará el archivo de la solicitud de licencia ambiental y la devolución de la totalidad de la documentación aportada, mediante acto administrativo 
+								td notificará en los términos de la ley.
+							tr
+								td(rowspan='2') Solicitud de conceptos
+								td ANLA 
+								td Solicitar a otras entidades o autoridades los conceptos técnicos o informaciones pertinentes
+								td diez (10) días hábiles
+							tr
+								td Entidades o autoridades 
+								td Remitir los conceptos técnicos o informaciones pertinentes
+								td veinte (20) días hábiles
+							tr
+								td Consulta Previa en Materia Ambiental
+								td Solicitante y ANLA 
+								td Consulta a comunidades indígenas y afrodescendientes antes de expedir licencia ambiental para proyecto de exploración o explotación de recursos naturales
+								td &nbsp;
+							tr
+								td(rowspan='2') Resultados de evaluación de requisitos EIA
+								td ANLA 
+								td Cuando el Estudio de Impacto Ambiental (EIA) no cumpla con los requi­sitos mínimos del Manual de Evaluación de Estudios Ambientales, se dará por terminado el trámite mediante acto administrativo
+								td Finalización del proceso
+							tr
+								td Solicitante 
+								td Presentará una nueva solicitud
+								td Definido por el solicitante
+								
+							
+
+					//- Foot notes
+					+footnotes('footnotes-mod-1')
+
+					//- Material modulo
+					+material-modulo('material-mod-1')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

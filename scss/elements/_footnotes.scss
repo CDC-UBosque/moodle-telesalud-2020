@@ -1,0 +1,30 @@
+// -----------------------
+// banner home
+// -----------------------
+.curso-cc,
+#page-mod-book-view #region-main .curso-cc,
+#region-main .curso-cc{
+	
+	.foot-notes{
+		padding: 2rem 0;
+		border-top: 2px solid $color_brand_green;
+	    border-bottom: 2px solid $color_brand_green;
+	    background: $color_light_green;
+	    margin-top: 3rem;
+		
+		li{
+			margin-bottom: 0.5rem;
+			@include font_universal (
+				$font_family_line_height: 19px,
+				$font_family_weight: 300,
+				$font_family_size: 13px,
+				$font_family_color: $color_brand_blue,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font_lato_italic
+			);
+			
+		}
+		
+	}
+	
+}

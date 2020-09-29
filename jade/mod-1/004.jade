@@ -1,0 +1,207 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				//- banner modulos
+				div#banner
+			
+				//- menu
+				+menu
+				
+				//- ---------------- 
+				//- ---------------- Left content
+				//- ---------------- 
+				div.content-left
+					
+					div.blocks
+						+modulo('Módulo 1', 'Ámbito jurídico: regulación para el sector, estrategias de licenciamiento ambiental', 'test-mod-1')
+						
+						+navegacion('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323678&chapterid=9354', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=323678&chapterid=9356', 'forward')
+				
+				//- ---------------- 
+				//- ---------------- Right content
+				//- ---------------- 
+				div.content-right
+					
+					+modulo-video('video-mod-1')
+					
+					h1 Modificación de Licencia Ambiental (Decreto 1076 /2015)
+									
+					p En que casos debe ser modificada la licencia ambiental:
+					
+					//- ---------------- 
+					//- ---------------- Tabs
+					//- ---------------- 
+					+tabs-containers
+						+set('titles')
+							li.active: a(href='#1' data-toggle='tab') 1
+							li: a(href='#2' data-toggle='tab') 2
+							li: a(href='#3' data-toggle='tab') 3
+							li: a(href='#4' data-toggle='tab') 4
+							li: a(href='#5' data-toggle='tab') 5
+							li: a(href='#6' data-toggle='tab') 6
+							li: a(href='#7' data-toggle='tab') 7
+							li: a(href='#8' data-toggle='tab') 8
+							li: a(href='#9' data-toggle='tab') 9
+							
+						+set('content')
+							div.tab-pane.fade.active.in#1
+								p Cuando el titular de la licencia ambiental pretenda modificar el proyecto, obra o actividad de forma que se generen impactos ambientales adicionales a los ya identificados en la licencia ambiental. 
+							div.tab-pane.fade#2
+								p Cuando al otorgarse la licencia ambiental no se contemple el uso, aprovechamiento o afectación de los recursos naturales renovables, necesarios o suficientes para el buen desarrollo y operación del proyecto, obra o actividad. 
+							div.tab-pane.fade#3
+								p Cuando se pretendan variar las condiciones de uso, aprovechamiento o afectación de un recurso natural renovable, de forma que se genere un mayor impacto sobre los mismos respecto de lo consagrado en la licencia ambiental. 
+							div.tab-pane.fade#4
+								p Cuando el titular del proyecto, obra o actividad solicite efectuar la reducción del área licenciada o la ampliación de la misma con áreas lindantes al proyecto. 
+							div.tab-pane.fade#5
+								p Cuando el proyecto, obra o actividad cambie de autoridad ambiental competente por efecto de un ajuste en el volumen de explotación, el calado, la producción, el nivel de tensión y demás características del proyecto. 
+							div.tab-pane.fade#6
+								p Cuando como resultado de las labores de seguimiento, la autoridad identifique impactos ambientales adicionales a los identificados en los estudios ambientales y requiera al licenciatario para que ajuste tales estudios. 
+							div.tab-pane.fade#7
+								p Cuando las áreas objeto de licenciamiento ambiental no hayan sido intervenidas y estas áreas sean devueltas a la autoridad competente por parte de su titular. 
+							div.tab-pane.fade#8
+								p Cuando se pretenda integrar la licencia ambiental con otras licencias ambientales. 
+							div.tab-pane.fade#9
+								p Para el caso de proyectos existentes de exploración y/o explotación de hidrocarburos en yacimientos convencionales que pretendan también desarrollar actividades de exploración y explotación de hidrocarburos en yacimientos no convencionales siempre y cuando se pretenda realizar el proyecto obra o actividad en la misma área ya licenciada y el titular sea el mismo, de lo contrario requerirá adelantar el proceso de licenciamiento ambiental de que trata el presente decreto. Este numeral no aplica para los proyectos que cuentan con un plan de manejo ambiental como instrumento de manejo y control, caso en el cual se deberá obtener la correspondiente licencia ambiental. 
+								
+					p De acuerdo con las premisas anteriores, cuando se pretenda modificar la licencia ambiental se deberá presentar y allegar ante la autoridad ambiental competente la siguiente información: 
+					
+					
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('')
+						+set('thead')
+							tr
+								th Requerimiento
+								th Aclaración
+						+set('tr')
+							tr
+								td Solicitud suscrita por el titular de la licencia. 
+								td En caso en que el titular sea persona jurídica, la solicitud deberá ir suscrita por el representante legal de la misma o en su defecto por el apoderado debidamente constituido.
+							tr
+								td La descripción de la (s) obra (s) o actividad (es) objeto de modificación.
+								td Incluyendo plano y mapas de la localización, el costo de la modificación y la justificación.
+							tr
+								td El complemento del estudio de impacto ambiental. 
+								td Debe contener la descripción y evaluación de los nuevos impactos ambientales si los hubiera y la propuesta de ajuste al plan de manejo ambiental que corresponda.
+							tr
+								td Constancia de pago del cobro para la prestación de los servicios de la evaluación de los estudios ambientales del proyecto, obra o actividad.
+								td N/A
+							tr
+								td Copia de la constancia de radicación del complemento del estudio de impacto ambiental ante la respectiva autoridad ambiental con jurisdicción en el área de influencia directa del proyecto
+								td N/A
+					
+					p Una vez presentados los documentos, se debe realizar el trámite para modificar la Licencia Ambiental que incluye las siguientes etapas: 			
+					
+					//- ---------------- 
+					//- ---------------- Tables
+					//- ----------------
+					+tables-containers('')
+						+set('thead')
+							tr
+								th Etapa
+								th Responsable
+								th Requerimiento
+								th Tiempo
+						+set('tr')
+							tr
+								td Inicio de trámite de modificación de licencia ambiental
+								td ANLA
+								td De manera inmediata procederá a para expedir el acto de inicio de trámite de modificación de licencia ambiental
+								td En los términos de la Ley 1437 de 2011 y se publicará en el boletín de la autoridad ambiental competente en los términos del artículo 70 de la Ley 99 de 1993.
+							tr
+								td(rowspan='3') Radicar el Estudio de Impacto Ambiental
+								td Solicitante 
+								td Radicación del estudio de impacto ambiental en la autoridad o autoridades ambientales con jurisdicción en el área del proyecto.
+								td Definido por el solicitante
+							tr
+								td ANLA 
+								td Cuando considere pertinente requerirá información adicional relacionada con el uso y/o aprovechamiento de los recursos naturales renovables a la autoridad o autoridades ambientales con jurisdicción
+								td Diez (10) días hábiles
+							tr
+								td Autoridad o autoridades ambientales con jurisdicción 
+								td Emitir el correspondiente concepto técnico sobre los requerimientos de la ANLA
+								td diez (10) días hábiles.
+							tr
+								td Evaluación del estudio ambiental
+								td ANLA
+								td Evaluará que el estudio ambiental presentado se ajuste a los requisitos mínimos contenidos en el Manual de Evaluación de Estudios Ambientales
+								td &nbsp;
+							tr
+								td Visita al proyecto
+								td ANLA
+								td Realizará visita al proyecto, cuando la naturaleza del mismo lo requiera
+								td Dentro de los quince (15) días hábiles
+							tr
+								td(rowspan='4') Reunión adicional 
+								td ANLA
+								td Cuando no se estime pertinente la visita o habiendo vencido el anterior lapso la podrá realizar una reunión con el fin de solicitar por una única vez la información adicional que se considere pertinente. 
+								td cinco (5) días hábiles
+							tr
+								td &nbsp;
+								td Dicha reunión será convocada mediante oficio, a la cual deberá asistir por lo menos el solicitante, o representante legal en caso de ser perso­na jurídica o su apoderado debidamente constituido, y por parte de la autoridad ambiental competente deberá asistir el funcionario delegado para tal efecto.
+								td &nbsp;
+							tr
+								td &nbsp;
+								td Toda decisión que se adopte en esta reunión se notificará verbalmente, debiendo dejar precisa constancia a través de acta de las decisiones adoptadas.
+								td &nbsp;
+							tr
+								td Solicitante
+								td La inasistencia a esta reunión no impedirá la realización de la misma, salvo cuando por justa causa el peticionario lo solicite.
+								td &nbsp;
+							tr
+								td(rowspan='5') Información complementaria
+								td Solicitante.
+								td Allegar exclusivamente la información solicitada en el requerimiento efectuado por la autoridad ambiental y solo podrá ser aportada por una única vez.
+								td (1) mes
+							tr
+								td &nbsp;
+								td Este término podrá ser prorrogado de manera excepcional, hasta antes del vencimiento del plazo y por un término igual, previa solicitud.
+								td De conformidad con el artículo 17 de la Ley 1437 de 2011 
+							tr
+								td ANLA
+								td En el evento que el solicitante no allegue la información se ordenará el archivo de la solicitud de licencia ambiental y la devolución de la totalidad de la documentación aportada, mediante acto administrativo 
+								td Notificará en los términos de la ley. 
+							tr
+								td ANLA
+								td Allegada la información por parte del solicitante podrá solicitar a otras entidades o autoridades los conceptos técnicos o informaciones pertinentes
+								td Hasta tres (3) días hábiles
+							tr
+								td Entidades o autoridades
+								td Remitir los conceptos técnicos o informaciones pertinentes
+								td Siete (7) días hábiles
+							tr
+								td Acto administrativo definitivo 
+								td ANLA
+								td Vencido el término anterior, debe expedir el acto que declara reunida información y la resolución o el acto administrativo que otorga o niega la modificación de la licencia ambiental.
+								td Diez (10) días hábiles, deberá ser publicada en los términos del artículo 71 de la Ley 99 de 1993
+										
+
+					//- Foot notes
+					+footnotes('footnotes-mod-1')
+
+					//- Material modulo
+					+material-modulo('material-mod-1')
+					
+					
+					
+					
+	//- footer section
+	+footer
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
